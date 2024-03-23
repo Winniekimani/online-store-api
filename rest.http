@@ -34,11 +34,11 @@ Content-Type: application/json
             
 
             "productCode":"PIN001",
-              "quantity":3
+              "quantity":2
         },
         {
               "productCode":"PHN001",
-            "quantity":2
+            "quantity":3
         }
    ]
 }
