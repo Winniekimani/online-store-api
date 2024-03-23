@@ -1,7 +1,5 @@
-package com.example.inventory.entity;
+package com.example.inventory.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,10 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(value="inventories")
-public class Inventory {
-
-    @Id
+public class InventoryResponse {
     private String id;
 
     private String productCode;
