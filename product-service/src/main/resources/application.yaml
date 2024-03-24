@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 6000
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/product_service
@@ -7,15 +7,11 @@ spring:
     password: root
   application:
     name: product-service
+  config:
+    import: optional:configserver:http://localhost:8888
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
 
-  eureka:
-  client:
-    enabled: true
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
+ 
