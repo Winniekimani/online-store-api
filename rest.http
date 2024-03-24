@@ -1,31 +1,31 @@
 ### Simple hello endpoint
-GET http://localhost:8080/api/hello HTTP/1.1
+GET http://localhost:7000/api/hello HTTP/1.1
 
 ### List Products
 # @name ProductList
-GET http://localhost:8080/api/products HTTP/1.1
+GET http://localhost:7000/api/products HTTP/1.1
 
 
 ### Save Product
 # @name Saveproduct
-POST http://localhost:8080/api/products HTTP/1.1
+POST http://localhost:7000/api/products HTTP/1.1
 Content-Type: application/json
 
 {
-     "name":"Phone",
-    "price":"15799.00",
-    "productCode":"PHN001"
+     "name":"laptop",
+    "price":"40000.00",
+    "productCode":"LAP001"
 }
 
 
 ### Get Product
 # @name GetProductById
-GET http://localhost:8080/api/products/5 HTTP/1.1
+GET http://localhost:7000/api/products/3 HTTP/1.1
 
 
 ### Place Order
 # @name placeorder
-POST http://localhost:6001/api/orders/placeOrder HTTP/1.1
+POST http://localhost:7000/api/orders/placeOrder HTTP/1.1
 Content-Type: application/json
 
 {
@@ -44,7 +44,7 @@ Content-Type: application/json
 }
 ### Save Inventory
 # @name SaveInventory
-POST http://localhost:6002/api/inventory/create HTTP/1.1
+POST http://localhost:7000/api/inventory/create HTTP/1.1
 Content-Type: application/json
 
 {
